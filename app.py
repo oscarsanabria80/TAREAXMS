@@ -79,4 +79,7 @@ def djuegos(detalle):
 			filtro=zip(identificadores,juegos,sistemas,distribuidores,desarrolladores,categorias,anos)	
 	return render_template("djuegos.html",juegos=filtro)
 
-app.run(debug=True)
+#app.run(debug=True)
+
+port=os.enviro["PORT"]
+app.run('0.0.0.0',int(port), debug=True)
