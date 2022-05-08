@@ -1,0 +1,643 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.cuerpo {
+	
+    font-family: 'Noto Sans JP', sans-serif;	
+	background-image: url("https://saca7.blogs.uv.es/files/2016/10/61.jpg");
+	margin-top: auto;
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+.navbar {
+	background: #0d2b3f;
+}
+
+.navbar a {
+	color: rgb(243, 243, 243);
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: rgb(250, 246, 246);
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.contenedor-imagen {
+	height: 100vh;
+}
+
+.contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+
+main {
+	min-height: 100vh;
+}
+
+main .contenido p {
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #525151;
+}
+
+main .contenido .titulo {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+main .contenido .fecha {
+	font-size: 14px;
+	color: #B5B5B5;
+}
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside .adios {
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background: #1D2F3D;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+aside .indice a {
+	display: block;
+	margin-bottom: 10px;
+	color: #FFCD48;
+}
+
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+
+
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+	.navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
+
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+
+	.contenedor-imagen {
+		height: 50vh;
+	}
+
+	main .contenedor {
+		flex-direction: column;
+	}
+}
+
+
+
+
+.holas {
+background-color: transparent;
+height: 50;
+margin: 40px;
+
+}
+
+.categoria {
+background-image: url("https://fondosmil.com/fondo/90481.jpg");
+background-color: beige;
+
+}
+
+
+.categoria {
+	color: white;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1 em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+  }
+
+li {
+	list-style: none;
+	color: white;
+}
+
+
+
+
+
+
+
+/* * ================================================================================================================= */
+/* * ===========================================PRECIOS.HTML========================================================== */
+/* * ================================================================================================================= */
+
+.tablas {
+	border-collapse: separate;
+	text-align: center;
+	padding: auto;
+	color: black;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	width: 500px;
+	height: 800px;
+	margin: -100px 0 0 -200px;
+	margin-bottom: 50px;
+	}
+
+/* * =================================================================================================================== */
+
+.div {
+		margin-left: 40px;
+		margin-top: 40px;	
+}
+
+/* * =================================================================================================================== */
+
+.titulo {
+
+	text-align: center;
+	margin-top: 40px;
+	margin-left: 100px;
+}
+
+/* * =================================================================================================================== */
+
+.enlaces {
+
+	color: white;
+}
+
+/* * =================================================================================================================== */
+
+.marcas {
+
+	background-color: peachpuff;
+}
+
+/* * =================================================================================================================== */
+
+.modeloss {
+
+	background-color: gainsboro;
+}
+
+/* * =================================================================================================================== */
+
+.precio{
+
+	background-color: khaki;
+}
+
+/* * =================================================================================================================== */
+
+.cabecera {
+
+	background-color: beige;
+}
+/* * =================================================================================================================== */
+.competencias {
+
+	border-collapse: separate;
+	text-align: center;
+	padding: auto;
+	color: black;
+	position: absolute;
+	left: 80%;
+	top: 30%;
+	width: 500px;
+	height: 300px;
+	margin: -100px 0 0 -200px;
+	margin-bottom: 50px;
+	margin-top: 200px;
+}
+
+.flechas {
+
+	border-collapse: separate;
+	text-align: center;
+	padding: auto;
+	color: black;
+	position: absolute;
+	left: 27%;
+	top: 30%;
+	width: 400px;
+	height: 300px;
+	margin: -100px 0 0 -200px;
+	margin-bottom: 50px;
+	margin-top: 200px;
+}
+
+/* * ================================================================================================================= */
+/* * ===========================================SOPORTE.HTML========================================================== */
+/* * ================================================================================================================= */
+
+.dudas {
+
+	display: block;
+}
+
+/* * =================================================================================================================== */
+
+.formularios {
+
+	margin-top: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+/* * =================================================================================================================== */
+
+.bajo {
+
+	margin-top: 30px;
+	margin-bottom: 12px;
+	text-align: center;
+
+}
+
+/* * =================================================================================================================== */
+
+.footer {
+
+	margin-top: 16px;
+}
+
+/* * =================================================================================================================== */
+.consultas {
+
+	text-align: center;
+}
+
+/* * =================================================================================================================== */
+
+.horas{
+
+	width: 30%;
+
+}
+/* * =================================================================================================================== */
+
+.soportefotos {
+
+	width:830px;
+	margin: 0 auto;
+	margin-top: 130px;	
+	margin-left: 37%;
+}
+/* * =================================================================================================================== */
+
+/* * ================================================================================================================= */
+/* * ===========================================CATEGORIA.HTML======================================================== */
+/* * ================================================================================================================= */
+
+.asideC {
+
+	margin-top: 30px;
+	font-family: 1000px Arial, Helvetica, Sans-serif;
+	border: solid 2px black;
+	white-space:pre-line;
+	background-color: bisque;
+	color: black;
+	position: relative;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	width: 30%;
+	padding-right: 1%;
+	padding-top: 1%;
+	margin-left: 35%;
+}
+
+.parrafo {
+
+	text-align: center;
+	font-size: 33px;
+	margin-top: 15px;
+}
+
+
+.apartado {
+
+	text-align: center;
+}
+
+.marcasmovil {
+
+	margin-top: 16px;
+}
+
+
+.texto {
+
+	margin-top: 30px;
+	font-family: 1000px Arial, Helvetica, Sans-serif;
+	border: solid 2px black;
+	white-space:pre-line;
+	background-color: bisque;
+	color: black;
+	position: relative;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	width: 30%;
+	padding-right: 1%;
+	padding-top: 1%;
+	margin-left: 35%;
+	
+}
+
+.izquierdaA {
+
+	width: 10%; 
+	height: 40%;
+	margin-top: 12px;
+}
+
+.izquierdaB {
+
+	width: 20%; 
+	height: 40%;
+	margin-top: 12px;
+}
+
+.izquierdaC {
+
+	width: 10%; 
+	height: 40%;
+	margin-top: 12px;
+}
+
+.izquierdaD {
+
+	width: 10%; 
+	height: 20%;
+	margin-top: 12px;
+}
+
+/* * ================================================================================================================= */
+/* * ===========================================QUIENSOMOS.HTML======================================================= */
+/* * ================================================================================================================= */
+
+.imagenquiensomos {
+display: block;
+margin: 0px auto;
+margin-top: 60px;
+}
+
+.quiensomos {
+
+	margin-top: 20px;
+	text-align: center;
+}
+
+.parrafoquien {
+
+	margin-top: 30px;
+	font-family: 1000px Arial, Helvetica, Sans-serif;
+	border: solid 2px black;
+	white-space:pre-line;
+	background-color: bisque;
+	color: black;
+	position: relative;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	width: 30%;
+	padding-right: 1%;
+	padding-top: 1%;
+	margin-left: 35%;
+}
+
+.ubicacion {
+
+	width: 30%;
+	height: 40%;
+	margin-left: 35%;
+	margin-top: 35px;
+
+}
+
+.ubica {
+
+	text-align: center;
+	margin-top: 12px;
+}
+
+.insta {
+
+	border-collapse: separate;
+	text-align: center;
+	padding: auto;
+	color: black;
+	position: absolute;
+	left: 15%;
+	top: 30%;
+	width: 500px;
+	height: 500px;
+	margin: -100px 0 0 -200px;
+	margin-bottom: 50px;
+
+}
+.tw {
+
+	border-collapse: separate;
+	text-align: center;
+	padding: auto;
+	color: black;
+	position: absolute;
+	left: 79%;
+	top: 30%;
+	width: 500px;
+	height: 500px;
+	margin: -100px 0 0 -200px;
+	margin-bottom: 50px;
+
+}
+
+.llamanos {
+
+	border-collapse: separate;
+	text-align: center;
+	padding: auto;
+	color: black;
+	position: absolute;
+	left: 15%;
+	top: 30%;
+	width: 500px;
+	height: 300px;
+	margin: -100px 0 0 -200px;
+	margin-bottom: 50px;
+
+}
+
+
+.fondoinicio {
+
+	margin-top: 3%;
+	margin-left: 15%;
+	width: 10%;
+	height: 10%;
+}
+
+.bien {
+
+	border-collapse: separate;
+	text-align: center;
+	padding: auto;
+	color: black;
+	position: absolute;
+	left: 60%;
+	top: 20%;
+	width: 40%;
+	height: 68%;
+	margin: -100px 0 0 -200px;
+	margin-bottom: 50px;
+}
+
+.c {
+	color: #f2f2f2;
+	margin-top: 35px;
+}
+
+.for {
+
+	text-align: center;
+	margin-top: 190px;
+}
+
+.f {
+
+	text-align: center;
+	margin-top: 80px;
+}
+
+.centro{
+
+	margin: 0 auto;
+	border-collapse: collapse;
+	margin-top: 80px;
+	border: 1px solid black;
+}
+
+.ce{
+
+text-align: center;
+
+}
+
+.nombr {
+
+	text-align: center;
+	margin-top: 89px;
+}
+
+.lis {
+
+	text-align: center;
+	margin-top: 49px;
+	color:violet;
+}
+
+.ima {
+
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 156px;
+	color: black;
+
+}
+
+.h {
+
+	margin-top: 30px;
+}
+
+.c{
+	color: black;
+}
+
+.a {
+
+
+	text-align: center;
+	margin-top: 43px;
+}
+
+.l{
+	border-radius: 5px;
+	padding: 10px 7px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #333;
+	margin: 5px;
+	text-align: center;
+	margin-top: 46px;
+}
+
+.q {
+
+	margin-top: 23px;
+}
