@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+	<div class="for">
+		<header>
+			<h1>JUEGOS</h1>
+		</header>
+
+		<div class="formu">
+
+			<section class="sesion">
+
+				<h3 class="q">Busca  tus juegos</h3>
+				<form method="post" action="/juegos">
+					<div >
+						<div >
+							<input type="text" name="name" placeholder="nombre del juego" value="{{cadena}}" />
+							<select name= "cat">
+								{% if categorias %}
+								<option>Todos</option>
+								{% for elem in categorias -%}
+								{% if elem == categoria %}
+								<option value= "{{elem}}" selected="selected">{{elem.title()}}</option>
+								{% else %}
+								<option value= "{{elem}}">{{elem.title()}}</option>
+								{% endif %}
+								{% endfor -%}
+								{% endif %}
+							</select>
+						<div >
+							<ul>
+								<li><input type="submit" value="Buscar" class="special" /></li>
+								<li><input type="button" onclick="history.back()" name="volver atrás" value="volver atrás"></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+
+{% if juegos %}
+
+	<div class="f">
+		<header>
+			<h1>LISTA DE JUEGOS</h1>
+		</header>
+
+	</div>
+
+		<div >
+                <table class="centro">
+
+                    <tr>
+                        <td class="ce"><strong>Nombres</strong></td>
+                        <td class="ce"><strong>Desarrolladores</strong></td>
+                        <td class="ce"><strong>Más información</strong></td>
+                    </tr>
+					{% for elem in juegos %}
+						{% if elem[0] and elem[3] %}
+                    <tr>
+                        <td>{{elem[0]}}</td>
+                        <td>{{elem[1]}}</td>
+                        <td><u><a href="/juego/{{elem[2]}}">detalle</a></u></td>
+                    </tr>
+						{% endif %}
+						{% endfor %}
+
+                </table>
+		</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block contenido %}
+	<div>
+		
+			<h2>LISTA DE JUEGOS</h2>
+
+		<div >
+			<section>
+                <h3>Juegos</h3>
+                <table>
+                    <tr>
+                        <td><strong>Nombre</strong></td>
+                        <td><strong>Desarrolladores</strong></td>
+                        <td><strong>Más información</strong></td>
+                    </tr>
+                    {% for elem in juegos %}
+                    <tr>
+                        <td><strong>{{elem[0]}}</strong></td>
+                        <td><strong>{{elem[1]}}</strong></td>
+                        <td><u><a href="/juego/{{elem[2]}}">detalle</a></u></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+			</section>
+		</div>
+	</div>
+{% endblock %}

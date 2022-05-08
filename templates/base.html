@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link rel="icon" href="#">
+
+	{% block title %}
+
+	<title>JUEGOS</title>
+
+	{% endblock %}
+	
+	<link rel="stylesheet" href="{{url_for('static', filename = 'css/estilos.css')}}" />
+</head>
+
+<body class="cuerpo">
+		
+		<nav class="navbar">
+			
+			<div class="contenedor">
+				
+				<a href="#" target="_self"></a>
+				<a href="#" target="_self"></a>
+						
+			</div>
+			
+		</nav>
+
+	{% block contenido %}{% endblock %}
+</body>
+</html>

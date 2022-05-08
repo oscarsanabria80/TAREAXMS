@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+ <title>Inicio</title>
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="ima">
+<h1 class="c">¡¡BIENVENIDO A MI PAGINA DE JUEGOS!!</h1>
+
+<p class="c">Si pulsas en nuestro logo MSX podras acceder a nuestro buscador de juegos.</p>
+
+<a href="/juegos" ><img class="h" src="{{url_for('static', filename='imagen/msx.png')}}" alt="" /></a>
+
+
+</div>
+
+{% endblock %}
