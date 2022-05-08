@@ -81,5 +81,5 @@ def djuegos(detalle):
 
 #app.run(debug=True)
 
-port=os.enviro["PORT"]
-app.run('0.0.0.0',int(port), debug=True)
+port=os.environ["PORT"]
+app.run("0.0.0.0",int(port),debug=True)
